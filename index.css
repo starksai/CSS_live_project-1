@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0.5rem;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.header-left>img{
+    height: 4vw;
+    width: 4vw;
+}
+
+.header-center{
+    display: flex;
+    gap: 1rem;
+}
+
+.header-center>a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-center > a:hover{
+    text-decoration: underline;
+    color: coral;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-right img{
+    height: 60px;
+    width:60px ;
+}
+
+.header-right #yt-img{
+    height: 45px;
+    width:40px ;
+}
+
+.banner{
+    background-color: #F4F6FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+.dish-1, .dish-2,.dish-3{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: white;
+    height: 500px;
+    width: 330px;
+    padding: 1rem;
+}
+
+
+.dish-1 > img,.dish-2 > img,.dish-3 > img{
+    width: 100%;
+    height: 60%;
+}
+
+.dish-1 a, .dish-2 a, .dish-3 a{
+    text-decoration: none;
+    color: #D7B26D;
+}
+
+.dish-1 a:hover, .dish-2 a:hover, .dish-3 a:hover{
+    color: rgb(244, 122, 122);
+}
+
+.Category{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.category-heading{
+    background-color: antiquewhite;
+    padding: 1rem ;
+    text-align: center;
+}
+
+.category-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+
+}
+.category-menu-1, .category-menu-2, .category-menu-3{
+    height: 550px;
+    width: 340px;
+    position: relative;
+}
+.category-menu-1 .to-get-dim, .category-menu-2 .to-get-dim, .category-menu-3 .to-get-dim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.category-menu-1:hover .to-get-dim, 
+.category-menu-2:hover .to-get-dim, 
+.category-menu-3:hover .to-get-dim{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.category-menu img{
+    height: 100%;
+    width: 100%;
+}
+
+.category-menu h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+    padding: 2rem;
+    width: 200px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
